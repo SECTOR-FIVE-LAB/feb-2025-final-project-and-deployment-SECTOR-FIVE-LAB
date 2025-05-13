@@ -1,0 +1,184 @@
+/* Theme Styles */
+
+/* Light Theme (Default) */
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #2EC4B6;
+    --accent-color: #FFBF69;
+    --text-color: #333333;
+    --light-text: #666666;
+    --background-color: #FFFFFF;
+    --light-background: #F8F9FA;
+    --border-color: #E1E1E1;
+    --card-background: #FFFFFF;
+    --header-background: #FFFFFF;
+    --footer-background: #333333;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #FF8C61;
+    --secondary-color: #4ECDC4;
+    --accent-color: #FFD166;
+    --text-color: #E1E1E1;
+    --light-text: #B0B0B0;
+    --background-color: #1A1A1A;
+    --light-background: #2D2D2D;
+    --border-color: #404040;
+    --card-background: #2D2D2D;
+    --header-background: #2D2D2D;
+    --footer-background: #1A1A1A;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+}
+
+.theme-toggle i {
+    font-size: 1.4rem;
+}
+
+/* Theme-specific Styles */
+[data-theme="dark"] .main-header {
+    background-color: var(--header-background);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+[data-theme="dark"] .feature-card {
+    background-color: var(--card-background);
+}
+
+[data-theme="dark"] .main-footer {
+    background-color: var(--footer-background);
+}
+
+[data-theme="dark"] .nav-links {
+    background-color: var(--header-background);
+}
+
+[data-theme="dark"] .mobile-menu-btn .hamburger,
+[data-theme="dark"] .mobile-menu-btn .hamburger::before,
+[data-theme="dark"] .mobile-menu-btn .hamburger::after {
+    background-color: var(--text-color);
+}
+
+/* Theme Transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-specific Product Cards */
+.product-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Theme-specific Form Elements */
+input, textarea, select {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Theme-specific Buttons */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+}
+
+/* Theme-specific Cards */
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Theme-specific Tables */
+table {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--light-background);
+    font-weight: 600;
+}
+
+/* Theme-specific Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+} 

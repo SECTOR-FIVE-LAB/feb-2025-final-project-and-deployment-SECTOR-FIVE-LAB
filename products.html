@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our selection of quality chicken products at KenChick Market">
+    <title>Products - KenChick Market</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="KenChick Market Logo" width="150" height="50">
+                </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Quality chicken products for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="products-filters">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-options">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="whole">Whole Chicken</option>
+                        <option value="cuts">Chicken Cuts</option>
+                        <option value="specialty">Specialty Products</option>
+                    </select>
+                    
+                    <select id="price-filter">
+                        <option value="">Price Range</option>
+                        <option value="0-500">Under KES 500</option>
+                        <option value="500-1000">KES 500 - 1000</option>
+                        <option value="1000-1500">KES 1000 - 1500</option>
+                        <option value="1500+">Over KES 1500</option>
+                    </select>
+                    
+                    <select id="sort-filter">
+                        <option value="default">Sort By</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Products will be loaded dynamically via JavaScript -->
+            </div>
+
+            <!-- Loading More -->
+            <div class="load-more">
+                <button class="btn load-more-btn">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <h2>Product Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/download (5).jpeg">
+                    <h3>Whole Chicken</h3>
+                    <p>Fresh whole chickens, perfect for family meals</p>
+                    <a href="#whole" class="btn">View Products</a>
+                </div>
+                
+                <div class="category-card">
+                    <img src="images/download (6).jpeg" alt="Chicken Cuts">
+                    <h3>Chicken Cuts</h3>
+                    <p>Various cuts for different cooking needs</p>
+                    <a href="#cuts" class="btn">View Products</a>
+                </div>
+                
+                <div class="category-card">
+                    <img src="images/download (6).jpeg">
+                    <h3>Specialty Products</h3>
+                    <p>Premium and specialty chicken products</p>
+                    <a href="#specialty" class="btn">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Our Products?</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Quality Assured</h3>
+                    <p>All our products meet the highest quality standards</p>
+                </article>
+                
+                <article class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Same-day delivery within Nairobi</p>
+                </article>
+                
+                <article class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Hygienic</h3>
+                    <p>Properly handled and packaged products</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>KenChick Market</h3>
+                    <p>Your trusted source for quality chicken products in Kenya.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +254 XXX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> contact@kenchickmarket.com</li>
+                        <li><i class="fas fa-location-dot"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 KenChick Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
